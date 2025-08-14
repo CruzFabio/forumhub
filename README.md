@@ -50,19 +50,19 @@ src
 ## ⚙️ Configuração do Ambiente
 
 ### 1️⃣ Clonar o repositório
-\`\`\`bash
+```bash
 git clone https://github.com/CruzFabio/forumhub
 cd forumhub
-\`\`\`
+```
 
 ### 2️⃣ Configurar o banco de dados
 Crie um banco no PostgreSQL:
-\`\`\`sql
+```sql
 CREATE DATABASE forumhub;
-\`\`\`
+```
 
 ### 3️⃣ Configurar o \`application.properties\`
-\`\`\`properties
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/forumhub
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
@@ -70,20 +70,20 @@ spring.jpa.hibernate.ddl-auto=update
 
 api.security.token.secret=uma_senha_secreta
 jwt.expiration=3600000
-\`\`\`
+```
 
 ---
 
 ## ▶️ Executando o Projeto
 
-\`\`\`bash
+```bash
 mvn spring-boot:run
-\`\`\`
+```
 
 A aplicação estará disponível em:
-\`\`\`
+```
 http://localhost:8080
-\`\`\`
+```
 
 ---
 
@@ -92,19 +92,19 @@ http://localhost:8080
 ### 1. Gerar Token
 - **POST** \`/login\`
 - Body:
-  \`\`\`json
+  ```json
   {
   "login": "usuario",
   "senha": "senha"
   }
-  \`\`\`
+  ```
   ![Login Request](docs/images/login.png)
 
 ### 2. Usar Token nas Requisições
 - Enviar no Header:
-  \`\`\`
+  ```
   Authorization: Bearer SEU_TOKEN_AQUI
-  \`\`\`
+  ```
   ![Token Header](docs/images/token-header.png)
 
 ---
