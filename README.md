@@ -30,20 +30,20 @@ API REST para gerenciamento de tópicos de um fórum, desenvolvida em **Java + S
 
 ## 📂 Estrutura do Projeto
 
-\`\`\`
+```text
 src
-├── main
-│   ├── java/com/seuusuario/forumhub
-│   │   ├── controller      # Controladores REST
-│   │   ├── domain          # Entidades e repositórios
-│   │   ├── dto             # Objetos de transferência de dados
-│   │   ├── infra/security  # Configurações e filtros de segurança
-│   │   ├── service         # Regras de negócio
-│   │   └── exception       # Classes de exceção personalizada
-│   └── resources
-│       ├── application.properties
-│       └── db/migration    # Scripts SQL (Flyway)
-\`\`\`
+ ├── main
+ │   ├── java/com/seuusuario/forumhub
+ │   │   ├── controller      # Controladores REST
+ │   │   ├── domain          # Entidades e repositórios
+ │   │   ├── dto             # Objetos de transferência de dados
+ │   │   ├── infra/security  # Configurações e filtros de segurança
+ │   │   ├── service         # Regras de negócio
+ │   │   └── exception       # Classes de exceção personalizada
+ │   └── resources
+ │       ├── application.properties
+ │       └── db/migration    # Scripts SQL (Flyway)
+```
 
 ---
 
@@ -51,7 +51,7 @@ src
 
 ### 1️⃣ Clonar o repositório
 \`\`\`bash
-git clone https://github.com/seuusuario/forumhub.git
+git clone https://github.com/CruzFabio/forumhub
 cd forumhub
 \`\`\`
 
@@ -133,4 +133,4 @@ http://localhost:8080
 
 ---
 
-## Desenvolvido por Fabio Cruz
+### Desenvolvido por Fabio Cruz
