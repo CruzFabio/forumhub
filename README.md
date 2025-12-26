@@ -1,3 +1,8 @@
+![Java](https://img.shields.io/badge/Java-17+-blue)
+![Spring Boot](https://img.shields.io/badge/Spring_Boot-3-green)
+![Status](https://img.shields.io/badge/status-active-success)
+
+
 # 📚 FórumHub API
 
 API REST para gerenciamento de tópicos de um fórum, desenvolvida em **Java + Spring Boot**, com autenticação via **JWT** e persistência em **PostgreSQL**.
